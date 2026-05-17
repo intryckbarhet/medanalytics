@@ -1,0 +1,83 @@
+{
+  "biopro_LBDSGLSI": {
+    "name": "glucose",
+    "unit": "mmol/L",
+    "sex_dependent": false,
+    "ranges": { "any": { "min": 3.9, "max": 5.8 } }
+  },
+  "ghb_LBXGH": {
+    "name": "glycohemoglobin",
+    "unit": "%",
+    "sex_dependent": false,
+    "ranges": { "any": { "min": 4.0, "max": 5.7 } }
+  },
+  "cbc_LBXHGB": {
+    "name": "hemoglobin",
+    "unit": "g/L",
+    "sex_dependent": true,
+    "ranges": {
+      "male": { "min": 135, "max": 175 },
+      "female": { "min": 120, "max": 155 }
+    }
+  },
+  "cbc_LBXMCVSI": {
+    "name": "MCV",
+    "unit": "fL",
+    "sex_dependent": false,
+    "ranges": { "any": { "min": 80.0, "max": 100.0 } }
+  },
+  "fertin_LBXFER": {
+    "name": "ferritin",
+    "unit": "ng/mL",
+    "sex_dependent": true,
+    "ranges": {
+      "male": { "min": 24.0, "max": 336.0 },
+      "female": { "min": 11.0, "max": 307.0 }
+    }
+  },
+  "ins_LBDINSI": {
+    "name": "insulin",
+    "unit": "pmol/L",
+    "sex_dependent": false,
+    "ranges": { "any": { "min": 13.0, "max": 150.0 } }
+  },
+  "biopro_LBXSASSI": {
+    "name": "AST",
+    "unit": "U/L",
+    "sex_dependent": true,
+    "ranges": {
+      "male": { "min": 10.0, "max": 40.0 },
+      "female": { "min": 10.0, "max": 35.0 }
+    }
+  },
+  "biopro_LBXSATSI": {
+    "name": "ALT",
+    "unit": "U/L",
+    "sex_dependent": true,
+    "ranges": {
+      "male": { "min": 10.0, "max": 40.0 },
+      "female": { "min": 10.0, "max": 35.0 }
+    }
+  },
+  "biopro_LBDSCHSI": {
+    "name": "cholesterol total",
+    "unit": "mmol/L",
+    "sex_dependent": false,
+    "ranges": { "any": { "min": 3.1, "max": 5.2 } }
+  },
+  "biopro_LBDSCRSI": {
+    "name": "creatinine",
+    "unit": "umol/L",
+    "sex_dependent": true,
+    "ranges": {
+      "male": { "min": 62.0, "max": 115.0 },
+      "female": { "min": 53.0, "max": 97.0 }
+    }
+  },
+  "bmx_BMXBMI": {
+    "name": "BMI",
+    "unit": "kg/m2",
+    "sex_dependent": false,
+    "ranges": { "any": { "min": 18.5, "max": 25.0 } }
+  }
+}

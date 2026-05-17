@@ -1,4 +1,7 @@
-.DS_Store
-.venv/
-__pycache__/
 data/raw/
+data/processed/
+catboost_info/
+venv/
+__pycache__/
+.DS_Store
+visuals/
