@@ -24,7 +24,7 @@ def train_with_arm():
     df = pd.read_csv(data_path)
     rules = pd.read_csv(rules_path)
     
-    # 1. выбираем лучшие правила (lift > 2 и уверенность > 0.5)
+    # 1.    выбираем лучшие правила (lift > 2 и уверенность > 0.5)
     rules = rules[(rules['lift'] > 2) & (rules['confidence'] > 0.5)].head(100)
     
     print(f"внедряю {len(rules)} правил как фичи...")
@@ -50,11 +50,11 @@ def train_with_arm():
             df[col_id] = mask.astype(int)
             rule_features.append(col_id)
 
-    # 2. готовим список всех фич
+    # 2.    готовим список всех фич
     base_features = [c for c in df.columns if '_dev' in c or '_status' in c or 'idx_' in c]
     base_features += ['gender', 'age']
     base_features += [c for c in df.columns if c.startswith('feature_')]
-    
+
     all_features = base_features + rule_features
     
     target_cols = [c for c in df.columns if c.startswith('target_')]
